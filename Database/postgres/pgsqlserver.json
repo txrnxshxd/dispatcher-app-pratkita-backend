@@ -1,0 +1,21 @@
+{
+    "Servers": {
+        "1": {
+            "Name": "dispatcher",
+            "Group": "AirServers",
+            "Host": "192.168.0.37",
+            "Port": 42000,
+            "MaintenanceDB": "postgres",
+            "Username": "postgres",
+            "UseSSHTunnel": 0,
+            "TunnelPort": "22",
+            "TunnelAuthentication": 0,
+            "KerberosAuthentication": false,
+            "ConnectionParameters": {
+                "sslmode": "prefer",
+                "connect_timeout": "30"
+            },
+            "Tags": []
+        }
+    }
+}

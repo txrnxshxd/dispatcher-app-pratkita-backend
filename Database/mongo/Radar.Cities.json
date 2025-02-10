@@ -1,0 +1,78 @@
+[{
+  "_id": 1,
+  "Airports": [],
+  "Pilots": [],
+  "Name": "Kemerovo",
+  "CountryId": 1,
+  "Country": {
+    "CarrierCompanies": [],
+    "Cities": [],
+    "_id": 1,
+    "Name": "Russia"
+  }
+},
+{
+  "_id": 2,
+  "Airports": [],
+  "Pilots": [],
+  "Name": "Moscow",
+  "CountryId": 1,
+  "Country": {
+    "CarrierCompanies": [],
+    "Cities": [],
+    "_id": 1,
+    "Name": "Russia"
+  }
+},
+{
+  "_id": 3,
+  "Airports": [],
+  "Pilots": [],
+  "Name": "Novosibirsk",
+  "CountryId": 1,
+  "Country": {
+    "CarrierCompanies": [],
+    "Cities": [],
+    "_id": 1,
+    "Name": "Russia"
+  }
+},
+{
+  "_id": 4,
+  "Airports": [],
+  "Pilots": [],
+  "Name": "Berlin",
+  "CountryId": 2,
+  "Country": {
+    "CarrierCompanies": [],
+    "Cities": [],
+    "_id": 2,
+    "Name": "Germany"
+  }
+},
+{
+  "_id": 5,
+  "Airports": [],
+  "Pilots": [],
+  "Name": "Frankfurt am Main",
+  "CountryId": 2,
+  "Country": {
+    "CarrierCompanies": [],
+    "Cities": [],
+    "_id": 2,
+    "Name": "Germany"
+  }
+},
+{
+  "_id": 6,
+  "Airports": [],
+  "Pilots": [],
+  "Name": "Ottawa",
+  "CountryId": 4,
+  "Country": {
+    "CarrierCompanies": [],
+    "Cities": [],
+    "_id": 4,
+    "Name": "Canada"
+  }
+}]

@@ -1,0 +1,576 @@
+[{
+  "_id": 1,
+  "CarrierCompanyId": 1,
+  "CarrierCompany": {
+    "Flights": [],
+    "_id": 1,
+    "Name": "Aeroflot",
+    "CountryId": 0,
+    "Country": null
+  },
+  "PlaneId": 7,
+  "Plane": {
+    "Flights": [],
+    "_id": 7,
+    "CompanyId": 2,
+    "Company": {
+      "_id": 2,
+      "Name": "Boeing"
+    },
+    "Name": "747-200",
+    "TailNumber": "BG9732",
+    "PlaneTypeId": 2,
+    "PlaneType": {
+      "Planes": [],
+      "_id": 2,
+      "Name": "Пассажирский"
+    },
+    "TakeoffSpeed": 160,
+    "CruisingSpeed": 496,
+    "LandingSpeed": 145,
+    "MaxAltitude": 45100,
+    "PassengerCapacity": 450,
+    "MaxSpeed": 529,
+    "ManufactureYear": 1969,
+    "LastCheckDate": {
+      "$date": "2025-01-19T00:00:00.000Z"
+    }
+  },
+  "From": 5,
+  "AirportFrom": {
+    "_id": 5,
+    "Name": "Frankfurt Airport",
+    "ICAO": "EDDF",
+    "IATA": "FRA",
+    "CityId": 5,
+    "City": {
+      "Airports": [],
+      "Pilots": [],
+      "_id": 5,
+      "Name": "Frankfurt am Main",
+      "CountryId": 2,
+      "Country": {
+        "CarrierCompanies": [],
+        "Cities": [],
+        "_id": 2,
+        "Name": "Germany"
+      }
+    },
+    "Latitude": 50.053316,
+    "Longitude": 8.573055
+  },
+  "To": 1,
+  "AirportTo": {
+    "_id": 1,
+    "Name": "Alexei Leonov Kemerovo International Airport",
+    "ICAO": "UNEE",
+    "IATA": "KEJ",
+    "CityId": 1,
+    "City": {
+      "Airports": [],
+      "Pilots": [],
+      "_id": 1,
+      "Name": "Kemerovo",
+      "CountryId": 1,
+      "Country": {
+        "CarrierCompanies": [],
+        "Cities": [],
+        "_id": 1,
+        "Name": "Russia"
+      }
+    },
+    "Latitude": 55.280689,
+    "Longitude": 86.120385
+  },
+  "CaptainId": 4,
+  "Captain": {
+    "Flights": [],
+    "_id": 4,
+    "LastName": "Alexandrov",
+    "FirstName": "Alexandr",
+    "MiddleName": "Alexandrovich",
+    "CityId": 1,
+    "City": {
+      "Airports": [],
+      "Pilots": [],
+      "_id": 1,
+      "Name": "Kemerovo",
+      "CountryId": 1,
+      "Country": {
+        "CarrierCompanies": [],
+        "Cities": [],
+        "_id": 1,
+        "Name": "Russia"
+      }
+    }
+  },
+  "PilotId": 3,
+  "Pilot": {
+    "Flights": [],
+    "_id": 3,
+    "LastName": "Ivanov",
+    "FirstName": "Ivan",
+    "MiddleName": "Ivanovich",
+    "CityId": 1,
+    "City": {
+      "Airports": [],
+      "Pilots": [],
+      "_id": 1,
+      "Name": "Kemerovo",
+      "CountryId": 1,
+      "Country": {
+        "CarrierCompanies": [],
+        "Cities": [],
+        "_id": 1,
+        "Name": "Russia"
+      }
+    }
+  },
+  "Fullness": 123,
+  "DepartureDate": {
+    "$date": "2025-02-02T15:04:00.000Z"
+  },
+  "ArrivalDate": {
+    "$date": "2025-02-02T15:05:00.000Z"
+  },
+  "Altitude": 0,
+  "Speed": 0,
+  "VerticalSpeed": 0,
+  "Course": 0,
+  "Latitude": 55.53050322740249,
+  "Longitude": 85.25267443623068,
+  "DistanceBetweenAirportsKm": 6290,
+  "DistanceBetweenAirportsM": 6290314
+},
+{
+  "_id": 2,
+  "CarrierCompanyId": 4,
+  "CarrierCompany": {
+    "Flights": [],
+    "_id": 4,
+    "Name": "Lufthansa",
+    "CountryId": 0,
+    "Country": null
+  },
+  "PlaneId": 7,
+  "Plane": {
+    "Flights": [],
+    "_id": 7,
+    "CompanyId": 2,
+    "Company": {
+      "_id": 2,
+      "Name": "Boeing"
+    },
+    "Name": "747-200",
+    "TailNumber": "BG9732",
+    "PlaneTypeId": 2,
+    "PlaneType": {
+      "Planes": [],
+      "_id": 2,
+      "Name": "Пассажирский"
+    },
+    "TakeoffSpeed": 160,
+    "CruisingSpeed": 496,
+    "LandingSpeed": 145,
+    "MaxAltitude": 45100,
+    "PassengerCapacity": 450,
+    "MaxSpeed": 529,
+    "ManufactureYear": 1969,
+    "LastCheckDate": {
+      "$date": "2025-01-19T00:00:00.000Z"
+    }
+  },
+  "From": 1,
+  "AirportFrom": {
+    "_id": 1,
+    "Name": "Alexei Leonov Kemerovo International Airport",
+    "ICAO": "UNEE",
+    "IATA": "KEJ",
+    "CityId": 1,
+    "City": {
+      "Airports": [],
+      "Pilots": [],
+      "_id": 1,
+      "Name": "Kemerovo",
+      "CountryId": 1,
+      "Country": {
+        "CarrierCompanies": [],
+        "Cities": [],
+        "_id": 1,
+        "Name": "Russia"
+      }
+    },
+    "Latitude": 55.280689,
+    "Longitude": 86.120385
+  },
+  "To": 4,
+  "AirportTo": {
+    "_id": 4,
+    "Name": "Berlin Brandenburg Airport",
+    "ICAO": "EDDB",
+    "IATA": "BER",
+    "CityId": 4,
+    "City": {
+      "Airports": [],
+      "Pilots": [],
+      "_id": 4,
+      "Name": "Berlin",
+      "CountryId": 2,
+      "Country": {
+        "CarrierCompanies": [],
+        "Cities": [],
+        "_id": 2,
+        "Name": "Germany"
+      }
+    },
+    "Latitude": 52.3677,
+    "Longitude": 13.51021
+  },
+  "CaptainId": 3,
+  "Captain": {
+    "Flights": [],
+    "_id": 3,
+    "LastName": "Ivanov",
+    "FirstName": "Ivan",
+    "MiddleName": "Ivanovich",
+    "CityId": 1,
+    "City": {
+      "Airports": [],
+      "Pilots": [],
+      "_id": 1,
+      "Name": "Kemerovo",
+      "CountryId": 1,
+      "Country": {
+        "CarrierCompanies": [],
+        "Cities": [],
+        "_id": 1,
+        "Name": "Russia"
+      }
+    }
+  },
+  "PilotId": 4,
+  "Pilot": {
+    "Flights": [],
+    "_id": 4,
+    "LastName": "Alexandrov",
+    "FirstName": "Alexandr",
+    "MiddleName": "Alexandrovich",
+    "CityId": 1,
+    "City": {
+      "Airports": [],
+      "Pilots": [],
+      "_id": 1,
+      "Name": "Kemerovo",
+      "CountryId": 1,
+      "Country": {
+        "CarrierCompanies": [],
+        "Cities": [],
+        "_id": 1,
+        "Name": "Russia"
+      }
+    }
+  },
+  "Fullness": 123,
+  "DepartureDate": {
+    "$date": "2025-02-02T15:17:00.000Z"
+  },
+  "ArrivalDate": {
+    "$date": "2025-02-02T17:35:00.000Z"
+  },
+  "Altitude": 0,
+  "Speed": 0,
+  "VerticalSpeed": 0,
+  "Course": 0,
+  "Latitude": 52.36886473484343,
+  "Longitude": 13.513034693766189,
+  "DistanceBetweenAirportsKm": 6125,
+  "DistanceBetweenAirportsM": 6125316
+},
+{
+  "_id": 3,
+  "CarrierCompanyId": 1,
+  "CarrierCompany": {
+    "Flights": [],
+    "_id": 1,
+    "Name": "Aeroflot",
+    "CountryId": 0,
+    "Country": null
+  },
+  "PlaneId": 7,
+  "Plane": {
+    "Flights": [],
+    "_id": 7,
+    "CompanyId": 2,
+    "Company": {
+      "_id": 2,
+      "Name": "Boeing"
+    },
+    "Name": "747-200",
+    "TailNumber": "BG9732",
+    "PlaneTypeId": 2,
+    "PlaneType": {
+      "Planes": [],
+      "_id": 2,
+      "Name": "Пассажирский"
+    },
+    "TakeoffSpeed": 160,
+    "CruisingSpeed": 496,
+    "LandingSpeed": 145,
+    "MaxAltitude": 45100,
+    "PassengerCapacity": 450,
+    "MaxSpeed": 529,
+    "ManufactureYear": 1969,
+    "LastCheckDate": {
+      "$date": "2025-01-19T00:00:00.000Z"
+    }
+  },
+  "From": 5,
+  "AirportFrom": {
+    "_id": 5,
+    "Name": "Frankfurt Airport",
+    "ICAO": "EDDF",
+    "IATA": "FRA",
+    "CityId": 5,
+    "City": {
+      "Airports": [],
+      "Pilots": [],
+      "_id": 5,
+      "Name": "Frankfurt am Main",
+      "CountryId": 2,
+      "Country": {
+        "CarrierCompanies": [],
+        "Cities": [],
+        "_id": 2,
+        "Name": "Germany"
+      }
+    },
+    "Latitude": 50.053316,
+    "Longitude": 8.573055
+  },
+  "To": 1,
+  "AirportTo": {
+    "_id": 1,
+    "Name": "Alexei Leonov Kemerovo International Airport",
+    "ICAO": "UNEE",
+    "IATA": "KEJ",
+    "CityId": 1,
+    "City": {
+      "Airports": [],
+      "Pilots": [],
+      "_id": 1,
+      "Name": "Kemerovo",
+      "CountryId": 1,
+      "Country": {
+        "CarrierCompanies": [],
+        "Cities": [],
+        "_id": 1,
+        "Name": "Russia"
+      }
+    },
+    "Latitude": 55.280689,
+    "Longitude": 86.120385
+  },
+  "CaptainId": 4,
+  "Captain": {
+    "Flights": [],
+    "_id": 4,
+    "LastName": "Alexandrov",
+    "FirstName": "Alexandr",
+    "MiddleName": "Alexandrovich",
+    "CityId": 1,
+    "City": {
+      "Airports": [],
+      "Pilots": [],
+      "_id": 1,
+      "Name": "Kemerovo",
+      "CountryId": 1,
+      "Country": {
+        "CarrierCompanies": [],
+        "Cities": [],
+        "_id": 1,
+        "Name": "Russia"
+      }
+    }
+  },
+  "PilotId": 3,
+  "Pilot": {
+    "Flights": [],
+    "_id": 3,
+    "LastName": "Ivanov",
+    "FirstName": "Ivan",
+    "MiddleName": "Ivanovich",
+    "CityId": 1,
+    "City": {
+      "Airports": [],
+      "Pilots": [],
+      "_id": 1,
+      "Name": "Kemerovo",
+      "CountryId": 1,
+      "Country": {
+        "CarrierCompanies": [],
+        "Cities": [],
+        "_id": 1,
+        "Name": "Russia"
+      }
+    }
+  },
+  "Fullness": 123,
+  "DepartureDate": {
+    "$date": "2025-02-02T15:04:00.000Z"
+  },
+  "ArrivalDate": {
+    "$date": "2025-02-02T15:05:00.000Z"
+  },
+  "Altitude": 0,
+  "Speed": 0,
+  "VerticalSpeed": 0,
+  "Course": 0,
+  "Latitude": 52.3677,
+  "Longitude": 13.51021,
+  "DistanceBetweenAirportsKm": 6290,
+  "DistanceBetweenAirportsM": 6290314
+},
+{
+  "_id": 4,
+  "CarrierCompanyId": 1,
+  "CarrierCompany": {
+    "Flights": [],
+    "_id": 1,
+    "Name": "Aeroflot",
+    "CountryId": 0,
+    "Country": null
+  },
+  "PlaneId": 7,
+  "Plane": {
+    "Flights": [],
+    "_id": 7,
+    "CompanyId": 2,
+    "Company": {
+      "_id": 2,
+      "Name": "Boeing"
+    },
+    "Name": "747-200",
+    "TailNumber": "BG9732",
+    "PlaneTypeId": 2,
+    "PlaneType": {
+      "Planes": [],
+      "_id": 2,
+      "Name": "Пассажирский"
+    },
+    "TakeoffSpeed": 160,
+    "CruisingSpeed": 496,
+    "LandingSpeed": 145,
+    "MaxAltitude": 45100,
+    "PassengerCapacity": 450,
+    "MaxSpeed": 529,
+    "ManufactureYear": 1969,
+    "LastCheckDate": {
+      "$date": "2025-01-19T00:00:00.000Z"
+    }
+  },
+  "From": 5,
+  "AirportFrom": {
+    "_id": 5,
+    "Name": "Frankfurt Airport",
+    "ICAO": "EDDF",
+    "IATA": "FRA",
+    "CityId": 5,
+    "City": {
+      "Airports": [],
+      "Pilots": [],
+      "_id": 5,
+      "Name": "Frankfurt am Main",
+      "CountryId": 2,
+      "Country": {
+        "CarrierCompanies": [],
+        "Cities": [],
+        "_id": 2,
+        "Name": "Germany"
+      }
+    },
+    "Latitude": 50.053316,
+    "Longitude": 8.573055
+  },
+  "To": 1,
+  "AirportTo": {
+    "_id": 1,
+    "Name": "Alexei Leonov Kemerovo International Airport",
+    "ICAO": "UNEE",
+    "IATA": "KEJ",
+    "CityId": 1,
+    "City": {
+      "Airports": [],
+      "Pilots": [],
+      "_id": 1,
+      "Name": "Kemerovo",
+      "CountryId": 1,
+      "Country": {
+        "CarrierCompanies": [],
+        "Cities": [],
+        "_id": 1,
+        "Name": "Russia"
+      }
+    },
+    "Latitude": 55.280689,
+    "Longitude": 86.120385
+  },
+  "CaptainId": 4,
+  "Captain": {
+    "Flights": [],
+    "_id": 4,
+    "LastName": "Alexandrov",
+    "FirstName": "Alexandr",
+    "MiddleName": "Alexandrovich",
+    "CityId": 1,
+    "City": {
+      "Airports": [],
+      "Pilots": [],
+      "_id": 1,
+      "Name": "Kemerovo",
+      "CountryId": 1,
+      "Country": {
+        "CarrierCompanies": [],
+        "Cities": [],
+        "_id": 1,
+        "Name": "Russia"
+      }
+    }
+  },
+  "PilotId": 3,
+  "Pilot": {
+    "Flights": [],
+    "_id": 3,
+    "LastName": "Ivanov",
+    "FirstName": "Ivan",
+    "MiddleName": "Ivanovich",
+    "CityId": 1,
+    "City": {
+      "Airports": [],
+      "Pilots": [],
+      "_id": 1,
+      "Name": "Kemerovo",
+      "CountryId": 1,
+      "Country": {
+        "CarrierCompanies": [],
+        "Cities": [],
+        "_id": 1,
+        "Name": "Russia"
+      }
+    }
+  },
+  "Fullness": 123,
+  "DepartureDate": {
+    "$date": "2025-02-03T10:15:00.000Z"
+  },
+  "ArrivalDate": {
+    "$date": "2025-02-03T10:16:00.000Z"
+  },
+  "Altitude": 0,
+  "Speed": 0,
+  "VerticalSpeed": 0,
+  "Course": 0,
+  "Latitude": 55.30197842273917,
+  "Longitude": 86.04768195231782,
+  "DistanceBetweenAirportsKm": 6290,
+  "DistanceBetweenAirportsM": 6290314
+}]

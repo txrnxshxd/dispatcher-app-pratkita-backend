@@ -5,6 +5,13 @@ using MongoDB.Driver;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll",
+        builder => builder.AllowAnyOrigin()
+                          .AllowAnyHeader()
+                          .AllowAnyMethod());
+});
 
 
 builder.Services.AddControllers();
@@ -40,7 +47,7 @@ app.Use(async (context, next) =>
 
 app.UseRouting();
 
-app.UseCors("AllowSpecificOrigins");
+app.UseCors("AllowAll");
 
 app.UseAuthorization();
 

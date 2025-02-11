@@ -98,30 +98,6 @@ namespace DispatcherApp.Controllers
                 }
             }
 
-
-            //flight.AirportFrom = await _context.Airports.Where(a => a.Id == flight.From).FirstOrDefaultAsync();
-
-            //if (flight.AirportFrom == null) return NotFound();
-
-            //flight.AirportTo = await _context.Airports.Where(a => a.Id == flight.To).FirstOrDefaultAsync();
-
-            //if (flight.AirportTo == null) return NotFound();
-
-            //flight.AirportFrom.City = city1;
-            //flight.AirportTo.City = city2;
-
-            //flight.Plane = await _context.Planes.Where(p => p.Id == flight.PlaneId).FirstOrDefaultAsync();
-
-            //if (flight.Plane == null) return NotFound();
-
-            //flight.Captain = await _context.Pilots.Where(p => p.Id == flight.CaptainId).FirstOrDefaultAsync();
-
-            //if (flight.Captain == null) return NotFound();
-
-            //flight.Pilot = await _context.Pilots.Where(p => p.Id == flight.PilotId).FirstOrDefaultAsync();
-
-            //if (flight.Pilot == null) return NotFound();
-
             await _radar.CreateFlightAsync(flight);
 
             return Ok();

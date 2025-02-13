@@ -65,7 +65,7 @@ namespace DispatcherApp.Controllers
         public async Task<ActionResult> Post([FromBody] Flight flight)
         {
 
-            var lastFlight = await _radar.FindLastAsync();
+            var lastFlight = await _radar.GetLastAsync();
 
             if (lastFlight == null)
             {
@@ -77,7 +77,7 @@ namespace DispatcherApp.Controllers
             }
 
             var existingFlight = await _radar.GetLastByPlaneTailAsync(flight.Plane.TailNumber);
-            var lastHistoryFlight = await _history.FindLastByPlaneTailAsync(flight.Plane.TailNumber);
+            var lastHistoryFlight = await _history.GetLastByPlaneTailAsync(flight.Plane.TailNumber);
 
             if (existingFlight != null)
             {

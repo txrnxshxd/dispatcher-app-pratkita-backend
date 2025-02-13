@@ -45,7 +45,7 @@ namespace DispatcherApp.Controllers
                 return NotFound();
             }
 
-            var flight = await _history.FindLastByPlaneTailAsync(number);
+            var flight = await _history.GetLastByPlaneTailAsync(number);
 
             if (flight == null) return NotFound(new { message = "Самолет с таким бортовым номером не найден" });
 

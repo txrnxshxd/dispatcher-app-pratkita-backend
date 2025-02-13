@@ -5,7 +5,7 @@ using MongoDB.Driver;
 
 namespace DispatcherApp.Data
 {
-    public class FlightsHistoryService
+    public class FlightsHistoryService : IFlights
     {
         private readonly IMongoCollection<Flight> _flights;
 
@@ -42,7 +42,7 @@ namespace DispatcherApp.Data
             return flight;
         }
 
-        public async Task<Flight> FindLastAsync()
+        public async Task<Flight> GetLastAsync()
         {
             var flight = await _flights.Find(new BsonDocument())
                 .Sort(Builders<Flight>.Sort.Descending(f => f.Id))
@@ -52,7 +52,7 @@ namespace DispatcherApp.Data
             return flight;
         }
 
-        public async Task<Flight> FindLastByPlaneTailAsync(string tailnum)
+        public async Task<Flight> GetLastByPlaneTailAsync(string? tailnum)
         {
             var filter = Builders<Flight>.Filter.Eq(f => f.Plane.TailNumber, tailnum);
 
@@ -72,12 +72,6 @@ namespace DispatcherApp.Data
         public async Task DeleteFlightAsync(int? id)
         {
             await _flights.DeleteOneAsync(f => f.Id == id);
-        }
-
-        public async Task EditFlightAsync(int? id, Flight flight)
-        {
-            var filter = Builders<Flight>.Filter.Eq(f => f.Id, id);
-            await _flights.ReplaceOneAsync(filter, flight);
         }
     }
 }
